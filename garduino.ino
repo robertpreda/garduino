@@ -50,7 +50,7 @@ void setup()
   Wire.begin();
 }
 
-int get_soil_temp()
+float get_soil_temp()
 {
   int raw = analogRead(soilTemp);
   float temp = raw * 0.217226044 - 61.1111111;
